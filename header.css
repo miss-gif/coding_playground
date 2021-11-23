@@ -1,0 +1,53 @@
+/* HEADER */
+/* HEADER */
+/* HEADER */
+
+header {
+  width: 100%;
+  height: 10rem;
+  background-color: #f7f7f7;
+  position: fixed;
+  display: flex;
+  text-transform: uppercase;
+  /*모든 문자를 대문자로 변환하는 키워드*/
+  top: 0;
+}
+
+.header__navbar {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #1e1e1e;
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+
+.header__navbar span {
+  color: #f48840;
+}
+
+.header__navbar ul {
+  display: flex;
+}
+
+.header__navbar ul li {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #1e1e1e;
+}
+
+.header__navbar ul li a {
+  padding: 2.5rem;
+}
+
+.header__navbar ul li a.home {
+  color: #f48840;
+}
+
+.header__navbar ul li a:hover {
+  color: #f48840;
+}
