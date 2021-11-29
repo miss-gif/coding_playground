@@ -1,0 +1,20 @@
+@import url(./reset.css);
+@import url(./header.css);
+@import url(./main.css);
+@import url(./footer.css);
+
+:root {
+  --main-color: #262c3a;
+}
+
+html {
+  font-size: 16px;
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+body {}
+
+.layout {
+  display: flex;
+}

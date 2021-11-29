@@ -1,0 +1,57 @@
+main {
+  width: 100em;
+}
+
+.mainHeader {
+  height: 100px;
+  background-color: #156;
+  margin: 20px;
+}
+
+.todayReview {
+  height: 100px;
+  background-color: #156;
+  margin: 20px
+}
+
+.todayKeywords {
+  height: 100px;
+  background-color: #156;
+  margin: 20px
+}
+
+.movieCommunity {
+  height: 100px;
+  background-color: #156;
+  margin: 20px
+}
+
+.movieTogether {
+  height: 100px;
+  background-color: #156;
+  margin: 20px
+}
+
+.movieQuestion {
+  height: 100px;
+  background-color: #156;
+  margin: 20px
+}
+
+.movieQuestionRank {
+  height: 100px;
+  background-color: #156;
+  margin: 20px
+}
+
+.recommendationCategory {
+  height: 100px;
+  background-color: #156;
+  margin: 20px
+}
+
+.movieTogether {
+  height: 100px;
+  background-color: #156;
+  margin: 20px
+}
