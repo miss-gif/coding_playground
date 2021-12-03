@@ -1,12 +1,26 @@
+header {
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 nav {
-  width: 290px;
-  height: 680px;
+  width: 10em;
+  height: 40em;
   background-color: #1c222e;
-  padding: 20px;
+  border-radius: 0 3em 0 0;
   margin-top: 50px;
+  padding: 2em;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
 }
 
 nav li {
-  padding: 20px;
+  padding: 3em 0;
 }
 
+nav button {}

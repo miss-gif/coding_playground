@@ -1,57 +1,162 @@
 main {
-  width: 100em;
+  margin: 0 4em;
 }
 
 .mainHeader {
-  height: 100px;
-  background-color: #156;
-  margin: 20px;
+  margin: 2em 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.mainHeaderText>span {
+  font-size: 3rem;
+}
+
+.mainHeaderText>span:nth-child(2) {
+  font-size: 2rem;
+}
+
+.mainHeaderText>span:nth-child(3) {
+  font-size: 0.8rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.search input {
+  width: 22rem;
+  height: 3.5rem;
+  border-radius: 15px;
+}
+
+.searchIcon {
+  width: 2.5em;
+  height: 2.5em;
+  background-color: #713bda;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.6em;
+  position: absolute;
+  right: 1.5em;
+}
+
+/* todayReview */
+/* todayReview */
+/* todayReview */
 
 .todayReview {
-  height: 100px;
-  background-color: #156;
-  margin: 20px
+  height: 25em;
+  background-image: url(https://cdn.pixabay.com/photo/2014/12/27/16/38/planet-581239_960_720.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 2em;
+  position: relative;
 }
+
+.todayReviewInfo {
+  position: absolute;
+  bottom: 0;
+  padding: 3rem;
+}
+
+/* todayKeywords */
+/* todayKeywords */
+/* todayKeywords */
 
 .todayKeywords {
-  height: 100px;
-  background-color: #156;
-  margin: 20px
+  margin: 2em 0;
+  display: flex;
+  align-items: center;
 }
 
-.movieCommunity {
-  height: 100px;
-  background-color: #156;
-  margin: 20px
+.todayKeywords span {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 5px;
+  margin-right: 2px;
+  /* overflow: ; */
 }
+
+/* movieCommunity */
+/* movieCommunity */
+/* movieCommunity */
+
+.movieCommunity {}
+
+.movieCommunityTitle {
+  display: flex;
+  align-items: center;
+}
+
+.movieCommunityContent {
+  width: 20em;
+  height: 15em;
+  background-image: url(https://cdn.pixabay.com/photo/2014/12/27/16/38/planet-581239_960_720.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 2em;
+  position: relative;
+}
+
+.movieCommunityContentInfo {
+  /* position: absolute; */
+  bottom: 0;
+}
+
+
+/* todayReviewMini */
+/* todayReviewMini */
+/* todayReviewMini */
+
+.mini {
+  margin: 3em 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.todayReviewMini {
+  width: 70%;
+  height: 20em;
+  border-radius: 1em;
+  background-color: #81899bf6;
+}
+
+.todayKeywordsMini {
+  width: 28%;
+  height: 50em;
+  background-color: #156;
+}
+
+
 
 .movieTogether {
   height: 100px;
   background-color: #156;
-  margin: 20px
 }
 
 .movieQuestion {
   height: 100px;
   background-color: #156;
-  margin: 20px
 }
 
 .movieQuestionRank {
   height: 100px;
   background-color: #156;
-  margin: 20px
 }
 
 .recommendationCategory {
   height: 100px;
   background-color: #156;
-  margin: 20px
 }
 
 .movieTogether {
   height: 100px;
   background-color: #156;
-  margin: 20px
 }

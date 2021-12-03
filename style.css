@@ -18,3 +18,9 @@ body {}
 .layout {
   display: flex;
 }
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  margin: 1em 0.5em 1em 0;
+}
