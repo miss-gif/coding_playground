@@ -1,12 +1,8 @@
 footer {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background-color: #000;
-  /* position: fixed; */
-  bottom: -50px;
-  display: none;
 }
 
 .footer {
@@ -16,4 +12,13 @@ footer {
 
 .footer li {
   padding: 50px;
+}
+
+.sns {
+  padding: 10px;
+}
+
+footer .span {
+  margin: 10px;
+  padding: 10px;
 }

@@ -18,14 +18,33 @@
       </h1>
       <nav>
         <ul>
-          <li><a href=""><i class="far fa-file-pdf"></i>REVIEW</a></li>
-          <li><a href=""><i class="fas fa-video"></i>HORROR film</a></li>
-          <li><a href=""><i class="fas fa-book"></i>HORROR CARTOON</a></li>
-          <li><a href=""><i class="fas fa-comments"></i>THINKINg workshop</a></li>
+          <li>
+            <div class=""><i class="fas fa-book fa-2x"></i></div>
+            <a href="">REVIEW</a>
+          </li>
+          <li>
+            <div class=""><i class="fas fa-bookmark fa-2x"></i></div>
+            <a href="">HORROR film</a>
+          </li>
+          <li>
+            <div class=""><i class="fas fa-book-open fa-2x"></i></div>
+            <a href="">HORROR <br>CARTOON</a>
+          </li>
+          <li>
+            <div class=""><i class="fas fa-address-book fa-2x"></i></div>
+            <a href="">THINKINg <br>workshop</a>
+          </li>
+          <li>
+            <div class=""><i class="fas fa-sign-in-alt fa-2x"></i></div>
+            <button>LOGOUT</button>
+          </li>
         </ul>
-        <button>LOGOUT</button>
       </nav>
     </header>
+
+    <!-- MAIN -->
+    <!-- MAIN -->
+    <!-- MAIN -->
 
     <main>
       <section>
@@ -41,9 +60,13 @@
               <i class="fas fa-search"></i>
             </div>
           </div>
-          <div class="">
-            <i class="far fa-bell"></i>
-            <i class="fas fa-user-circle"></i>
+          <div class="mainHeaderInfo">
+            <div class="">
+              <i class="far fa-bell fa-3x"></i>
+            </div>
+            <div class="">
+              <i class="fas fa-user-circle fa-3x"></i>
+            </div>
             <span>홍길동 님</span>
           </div>
         </div>
@@ -70,16 +93,17 @@
 
         <div class="todayKeywords">
           <h2># 실시간 핫 키워드</h2>
-          <span>공포스러운</span>
-          <span>fresh fear</span>
-          <span>공포스러운</span>
-          <span>fresh fear</span>
-          <span>공포스러운</span>
-          <span>fresh fear</span>
-          <span>공포스러운</span>
-          <span>fresh fear</span>
-          <span>공포스러운</span>
-          <span>fresh fear</span>
+          <div class="">
+            <span>공포스러운</span>
+            <span>fresh fear</span>
+            <span>공포스러운</span>
+            <span>fresh fear</span>
+            <span>공포스러운</span>
+            <span>fresh fear</span>
+            <span>공포스러운</span>
+            <span>fresh fear</span>
+            
+          </div>
         </div>
 
         <!-- movieCommunity -->
@@ -91,15 +115,37 @@
             <h2>영화 같이 말해볼래</h2>
             <span>25</span>
           </div>
-          <div class="movieCommunityContent">
-            <div class="movieCommunityContentInfo">
-              <span>뉴뮤턴트</span>
-              <span>THE NEW MUTANTS</span>
-              <span>2020.09.10</span>
+          <div class="movieCommunityContentlist">
+            <div class="movieCommunityContent">
+              <div class="movieCommunityContentInfo">
+                <h3>뉴뮤턴트</h3>
+                <div class="movieCommunityContentInfoText">
+                  <span>THE NEW MUTANTS</span>
+                  <span>2020.09.10</span>
+                </div>
+              </div>       
             </div>
+            <div class="movieCommunityContent">
+              <div class="movieCommunityContentInfo">
+                <h3>뉴뮤턴트</h3>
+                <div class="movieCommunityContentInfoText">
+                  <span>THE NEW MUTANTS</span>
+                  <span>2020.09.10</span>
+                </div>
+              </div>       
+            </div>
+            <div class="movieCommunityContent">
+              <div class="movieCommunityContentInfo">
+                <h3>뉴뮤턴트</h3>
+                <div class="movieCommunityContentInfoText">
+                  <span>THE NEW MUTANTS</span>
+                  <span>2020.09.10</span>
+                </div>
+              </div>       
+            </div>
+            
           </div>
         </div>
-        <div class="">
 
           <!-- todayReviewMini -->
           <!-- todayReviewMini -->
@@ -114,21 +160,28 @@
                     결혼이 두려운 소심한 신랑 빅터(조니 뎁)가 겪는 환상적인 이야기. 결혼식을 하루 앞둔 빅터는 예행연습에서 계속 실수를 하자 밖으로 뛰쳐나간다. 숲 속에서 홀로 연습하던 도중, 땅
                     위로 튀어나온 손가락 뼈에 반지를 끼웠다가 유령신부(헬레나 본햄 카터)의 오해로 지하세계에 끌려가게 되는 색다른 경험을 하게 되는 것이다.</p>
                 </div>
-                <img src="" alt="">
+                <div class="infoImg"></div>
               </div>
               <div class="line"></div>
               <div class="tag">
-                <div class="">
-                  <div class="title">유령신부</div>
-                  <div class="originalTitle">Corpse Bride</div>
-                  <div class="release">2005</div>
+                <div class="title">
+                  <ul>
+                    <li>유령신부</li>
+                    <li>Corpse Bride</li>
+                    <li>2005</li>
+                  </ul>                
                 </div>
-                <div class="">
+                <div class="like">
                   <div class="like"><i class="fas fa-heart"></i>000</div>
                   <div class="comment"><i class="fas fa-comment-dots"></i>000</div>
                 </div>
               </div>
             </div>
+
+            <!-- todayKeywordsMini -->
+            <!-- todayKeywordsMini -->
+            <!-- todayKeywordsMini -->
+
             <div class="todayKeywordsMini">
               <h2># 실시간 핫 키워드</h2>
               <div class="tag">
@@ -146,111 +199,70 @@
             </div>
           </div>
 
-        </div>
-        <div class="movieTogether">
-          <div class="">
-            <h2>#같이 봐요 #COMIC</h2>
-            <span>25</span>
-          </div>
-          <div class="">
-            <span>뉴뮤턴트</span>
-
-
-            <div class="movieCommunityContentInfo">
-              <span>THE NEW MUTANTS</span>
-              <span>2020.09.10</span>
-            </div>
-          </div>
-
-
-
+          <!-- movieQuestion -->
+          <!-- movieQuestion -->
+          <!-- movieQuestion -->
 
           <div class="movieQuestion">
             <h2 class="">#생각공작소 #질문있어요</h2>
-            <div class="info">
-              <div class="CON">
-                <img src="" alt="">
-                <div class="">
+            <div class="movieQuestionArea">
+              <div class="movieQuestionContent">
+                <div class="movieQuestionContentImg"></div>
+                <div class="movieQuestionContentInfo">
                   <span>영화 같이 말해볼래</span>
-                  <span>#2005 #MMMM #MOVIE</span>
+                  <span>#영화 같이 ok</span>
                 </div>
-                <a href="">SEE MORE ></a>
+                <div class="movieQuestionContentBtn">SEE MORE></div>
               </div>
-              <div class="CON">
-                <img src="" alt="">
-                <div class="">
+              <div class="movieQuestionContent">
+                <div class="movieQuestionContentImg"></div>
+                <div class="movieQuestionContentInfo">
                   <span>영화 같이 말해볼래</span>
-                  <span>#2005 #MMMM #MOVIE</span>
+                  <span>#영화 같이 ok</span>
                 </div>
-                <a href="">SEE MORE ></a>
+                <div class="movieQuestionContentBtn">SEE MORE></div>
               </div>
-              <div class="CON">
-                <img src="" alt="">
-                <div class="">
+              <div class="movieQuestionContent">
+                <div class="movieQuestionContentImg"></div>
+                <div class="movieQuestionContentInfo">
                   <span>영화 같이 말해볼래</span>
-                  <span>#2005 #MMMM #MOVIE</span>
+                  <span>#영화 같이 ok</span>
                 </div>
-                <a href="">SEE MORE ></a>
+                <div class="movieQuestionContentBtn">SEE MORE></div>
               </div>
-              <div class="CON">
-                <img src="" alt="">
-                <div class="">
+              <div class="movieQuestionContent">
+                <div class="movieQuestionContentImg"></div>
+                <div class="movieQuestionContentInfo">
                   <span>영화 같이 말해볼래</span>
-                  <span>#2005 #MMMM #MOVIE</span>
+                  <span>#영화 같이 ok</span>
                 </div>
-                <a href="">SEE MORE ></a>
+                <div class="movieQuestionContentBtn">SEE MORE></div>
               </div>
             </div>
           </div>
 
+          <!-- movieQuestionRank -->
+          <!-- movieQuestionRank -->
+          <!-- movieQuestionRank -->
 
           <div class="movieQuestionRank">
             <h2>#생각공작소</h2>
             <span>더 많은 생각을 공유해요!</span>
-            <div class="">
-              <div class="">
-                <span>NUMBER</span>
-                <span>NAME</span>
-                <span>TXT</span>
-                <span>COURSes</span>
-                <span>DATE</span>
-                <span>LIKE</span>
-              </div>
-              <div class="">
-                <span>NUMBER</span>
-                <span>NAME</span>
-                <span>TXT</span>
-                <span>COURSes</span>
-                <span>DATE</span>
-                <span>LIKE</span>
-              </div>
-              <div class="">
-                <span>NUMBER</span>
-                <span>NAME</span>
-                <span>TXT</span>
-                <span>COURSes</span>
-                <span>DATE</span>
-                <span>LIKE</span>
-              </div>
-              <div class="">
-                <span>NUMBER</span>
-                <span>NAME</span>
-                <span>TXT</span>
-                <span>COURSes</span>
-                <span>DATE</span>
-                <span>LIKE</span>
-              </div>
-              <div class="">
-                <span>NUMBER</span>
-                <span>NAME</span>
-                <span>TXT</span>
-                <span>COURSes</span>
-                <span>DATE</span>
-                <span>LIKE</span>
+            <div class="movieQuestionRankArea">
+              <div class="movieQuestionRankAreaDate">
+                <div class="">번호</div>
+                <div class="">작성자</div>
+                <div class="">제목</div>
+                <div class="">조회수</div>
+                <div class="">작성일</div>
+                <div class="">추천</div>
               </div>
             </div>
           </div>
 
+          <!-- recommendationCategory -->
+          <!-- recommendationCategory -->
+          <!-- recommendationCategory -->
 
           <div class="recommendationCategory">
             <div class="">
@@ -274,22 +286,15 @@
               <span>fresh fear</span>
               <p>여러가지 테마를 선택하시면 회원님에게 맞는 후기 및 컨텐츠 리뷰를 보여드릴게요!</p>
             </div>
-
           </div>
-
-
-          <div class="movieTogether">
-            <h2 class="">#같이 봐요 #COMIC</h2>
-            <div class="">
-              <span>뉴뮤턴트</span>
-              <div class="movieCommunityContentInfo">
-                <span>THE NEW MUTANTS</span>
-                <span>2020.09.10</span>
-              </div>
-            </div>
       </section>
     </main>
   </div>
+
+  <!-- FOOTER -->
+  <!-- FOOTER -->
+  <!-- FOOTER -->
+
   <footer>
     <img src="" alt="">
     <ul class="footer">

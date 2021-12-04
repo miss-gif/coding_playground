@@ -4,16 +4,19 @@
 @import url(./footer.css);
 
 :root {
-  --main-color: #262c3a;
+  --background: #262c3a;
+  --header: #1c222e;
+  --content: #353c4b;
+  --btn: #713bda;
 }
 
-html {
+html {}
+
+body {
   font-size: 16px;
-  background-color: var(--main-color);
+  background-color: var(--background);
   color: #fff;
 }
-
-body {}
 
 .layout {
   display: flex;
