@@ -307,3 +307,7 @@ header .main-menu .item .item__contents .contents__texture p {
   bottom: 0;
   left: 275px;
 }
+
+.visual .fade-in {
+  opacity: 0;
+}
