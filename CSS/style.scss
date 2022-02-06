@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+// COMMOM
+
+body {
+  font-size: 16px;
+  background-color: #000;
+  color: #fff;
+}
+
+p {
+  line-height: 1.75em;
+  margin: 24px 0 0 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.inner {
+  width: 90%;
+  max-width: 980px;
+  margin: 0 auto;
+  position: relative;
+}
+
+// HEADER
+
+header {
+  width: 100%;
+  padding: 16px 40px;
+  background-color: #000;
+  position: fixed;
+  z-index: 99;
+  align-items: center;
+
+  h1 {
+    width: 92px;
+  }
+
+  nav {
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav ul li {
+    margin-left: 40px;
+  }
+}
+
+// MAIN
+main {
+  padding-top: 90px;
+
+  .about {
+    padding-top: 80px;
+  }
+
+  .movie {
+    padding-top: 80px;
+  }
+
+  .live {
+    padding-top: 80px;
+  }
+
+  .exhibition {
+    padding-top: 80px;
+  }
+
+  .sales {
+    padding-top: 80px;
+  }
+}
+
+//FOOTER
+footer {
+  font-size: 14px;
+}

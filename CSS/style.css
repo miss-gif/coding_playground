@@ -1,0 +1,84 @@
+body {
+  font-size: 16px;
+  background-color: #000;
+  color: #fff;
+}
+
+p {
+  line-height: 1.75em;
+  margin: 24px 0 0 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.inner {
+  width: 90%;
+  max-width: 980px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  padding: 16px 40px;
+  background-color: #000;
+  position: fixed;
+  z-index: 99;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header h1 {
+  width: 92px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 40px;
+}
+
+main {
+  padding-top: 90px;
+}
+
+main .about {
+  padding-top: 80px;
+}
+
+main .movie {
+  padding-top: 80px;
+}
+
+main .live {
+  padding-top: 80px;
+}
+
+main .exhibition {
+  padding-top: 80px;
+}
+
+main .sales {
+  padding-top: 80px;
+}
+
+footer {
+  font-size: 14px;
+}
+/*# sourceMappingURL=style.css.map */
