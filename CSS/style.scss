@@ -10,7 +10,7 @@ body {
 
 p {
   line-height: 1.75em;
-  margin: 24px 0 0 0;
+  margin-top: 24px;
 }
 
 img {
@@ -72,7 +72,6 @@ header {
   nav {
     ul {
       display: flex;
-
       li {
         margin-left: 40px;
       }
@@ -86,11 +85,32 @@ main {
 
   .about {
     padding-top: 80px;
-
+    h3 {
+      margin-top: 4rem;
+      font-size: 18px;
+    }
     ul {
+      margin-top: 24px;
       justify-content: space-between;
       li {
         width: calc(90% / 4);
+        position: relative;
+      }
+      li:hover {
+        cursor: pointer;
+      }
+      li img {
+        filter: drop-shadow(0px 0px 20px #50dcfd);
+      }
+      li div {
+        margin-top: -80px;
+        position: absolute;
+        font-weight: 400;
+      }
+      li div time {
+        line-height: 2em;
+        color: #2ef4f4;
+        font-size: 14px;
       }
     }
   }
@@ -98,12 +118,16 @@ main {
   .movie {
     padding-top: 80px;
     figure {
+      margin-top: 4rem;
       border: 1px solid #2ef4f4;
     }
   }
 
   .live {
     padding-top: 80px;
+    .live_box {
+      margin-top: 4rem;
+    }
   }
 
   .exhibition {
@@ -111,9 +135,10 @@ main {
     dl {
       width: 100%;
       margin: 40px 0 0 0;
+      justify-content: space-between;
       dt {
         width: 18%;
-        margin: 0 0 8px 0;
+        margin: 0 0 10px 0;
       }
       dd {
         width: 80%;
@@ -121,27 +146,40 @@ main {
       }
     }
     ul {
+      margin-top: 3rem;
       justify-content: space-between;
       li {
         width: calc(96% / 2);
       }
     }
 
+    iframe {
+      margin-top: 4rem;
+    }
+
     .note {
+      margin-top: 4rem;
+      width: 100%;
       border: 1px solid #2ef4f4;
-      padding: 50px;
+      box-sizing: border-box;
+      padding: 40px;
+      h3 {
+        font-size: 30px;
+        font-weight: 900;
+        padding-bottom: 30px;
+      }
     }
   }
 
   .sales {
     padding-top: 80px;
-    // background-color: #156;
     dl {
       width: 100%;
       margin: 40px 0 0 0;
+      justify-content: space-between;
       dt {
         width: 18%;
-        margin: 0 0 8px 0;
+        margin: 0 0 10px 0;
       }
       dd {
         width: 80%;
@@ -149,19 +187,30 @@ main {
       }
     }
     ul {
+      padding-top: 3rem;
       justify-content: space-between;
       li {
         width: calc(96% / 3);
       }
     }
     .otherItem {
+      padding-top: 3rem;
       display: block;
       margin: auto;
       width: 50%;
     }
   }
 
+  .gallery {
+    padding-top: 90px;
+    a img {
+      margin-top: 3rem;
+      border: 1px solid #2ef4f4;
+    }
+  }
+
   .othersite {
+    padding-top: 90px;
     ul {
       justify-content: center;
       li {

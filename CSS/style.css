@@ -6,7 +6,7 @@ body {
 
 p {
   line-height: 1.75em;
-  margin: 24px 0 0 0;
+  margin-top: 24px;
 }
 
 img {
@@ -90,7 +90,13 @@ main .about {
   padding-top: 80px;
 }
 
+main .about h3 {
+  margin-top: 4rem;
+  font-size: 18px;
+}
+
 main .about ul {
+  margin-top: 24px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -98,6 +104,28 @@ main .about ul {
 
 main .about ul li {
   width: calc(90% / 4);
+  position: relative;
+}
+
+main .about ul li:hover {
+  cursor: pointer;
+}
+
+main .about ul li img {
+  -webkit-filter: drop-shadow(0px 0px 20px #50dcfd);
+          filter: drop-shadow(0px 0px 20px #50dcfd);
+}
+
+main .about ul li div {
+  margin-top: -80px;
+  position: absolute;
+  font-weight: 400;
+}
+
+main .about ul li div time {
+  line-height: 2em;
+  color: #2ef4f4;
+  font-size: 14px;
 }
 
 main .movie {
@@ -105,11 +133,16 @@ main .movie {
 }
 
 main .movie figure {
+  margin-top: 4rem;
   border: 1px solid #2ef4f4;
 }
 
 main .live {
   padding-top: 80px;
+}
+
+main .live .live_box {
+  margin-top: 4rem;
 }
 
 main .exhibition {
@@ -119,11 +152,14 @@ main .exhibition {
 main .exhibition dl {
   width: 100%;
   margin: 40px 0 0 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 main .exhibition dl dt {
   width: 18%;
-  margin: 0 0 8px 0;
+  margin: 0 0 10px 0;
 }
 
 main .exhibition dl dd {
@@ -132,6 +168,7 @@ main .exhibition dl dd {
 }
 
 main .exhibition ul {
+  margin-top: 3rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -141,9 +178,23 @@ main .exhibition ul li {
   width: calc(96% / 2);
 }
 
+main .exhibition iframe {
+  margin-top: 4rem;
+}
+
 main .exhibition .note {
+  margin-top: 4rem;
+  width: 100%;
   border: 1px solid #2ef4f4;
-  padding: 50px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 40px;
+}
+
+main .exhibition .note h3 {
+  font-size: 30px;
+  font-weight: 900;
+  padding-bottom: 30px;
 }
 
 main .sales {
@@ -153,11 +204,14 @@ main .sales {
 main .sales dl {
   width: 100%;
   margin: 40px 0 0 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 main .sales dl dt {
   width: 18%;
-  margin: 0 0 8px 0;
+  margin: 0 0 10px 0;
 }
 
 main .sales dl dd {
@@ -166,6 +220,7 @@ main .sales dl dd {
 }
 
 main .sales ul {
+  padding-top: 3rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -176,9 +231,23 @@ main .sales ul li {
 }
 
 main .sales .otherItem {
+  padding-top: 3rem;
   display: block;
   margin: auto;
   width: 50%;
+}
+
+main .gallery {
+  padding-top: 90px;
+}
+
+main .gallery a img {
+  margin-top: 3rem;
+  border: 1px solid #2ef4f4;
+}
+
+main .othersite {
+  padding-top: 90px;
 }
 
 main .othersite ul {
