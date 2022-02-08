@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="./CSS/reset.css" />
     <link rel="stylesheet" href="./CSS/style.css" />
     <!-- JS -->
-    <link rel="stylesheet" href="./JS/main.js" />
+    <script defer src="./JS/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
 
   <body>
@@ -21,13 +22,13 @@
         <a href="#"><img src="./img/logo_mecasma.png" alt="logo" /></a>
       </h1>
       <nav>
-        <ul>
-          <li><a href="#">메카스마</a></li>
-          <li><a href="#">영상</a></li>
-          <li><a href="#">라이브</a></li>
-          <li><a href="#">전시전</a></li>
-          <li><a href="#">상품</a></li>
-          <li><a href="#">갤러리</a></li>
+        <ul id="button" class="button">
+          <li><a id="about_btn" href="#">메카스마</a></li>
+          <li><a id="movie_btn" href="#">영상</a></li>
+          <li><a id="live_btn" href="#">라이브</a></li>
+          <li><a id="exhibition_btn" href="#">전시전</a></li>
+          <li><a id="sales_btn" href="#">상품</a></li>
+          <li><a id="gallery_btn" href="#">갤러리</a></li>
         </ul>
       </nav>
     </header>
@@ -38,7 +39,7 @@
       </section>
       <!-- //title -->
 
-      <section class="about inner">
+      <section id="about" class="about inner content">
         <h2><img src="./img/title_about_kr.png" alt="about" /></h2>
         <p class="">
           브랜드 설립으로부터 1년…<br />
@@ -105,7 +106,7 @@
       </section>
       <!-- //about -->
 
-      <section class="movie inner">
+      <section id="movie" class="movie inner content">
         <h2><img src="./img/title_movie_kr.png" alt="movie" /></h2>
         <p class="">
           『세대와 장르를 넘어선 다양한 메카 로봇 상품이 세상에 넘쳐나는 "가능성"을 만들어 낸다』<br />
@@ -119,7 +120,7 @@
       </section>
       <!-- //movie -->
 
-      <section class="live inner">
+      <section id="live" class="live inner content">
         <h2><img src="./img/title_live_kr.png" alt="live" /></h2>
         <div class="live_box">
           <div class="youtube">
@@ -137,7 +138,7 @@
       </section>
       <!-- //live -->
 
-      <section class="exhibition inner">
+      <section id="exhibition" class="exhibition inner content">
         <h2>
           <img src="./img/title_exhibition_kr.png" alt="EXHIBITION 2022.01.15 - 16 개최 아키하바라 리얼 전시" />
         </h2>
@@ -186,7 +187,7 @@
       </section>
       <!-- //exhibition -->
 
-      <section class="sales inner">
+      <section id="sales" class="sales inner content">
         <h2>
           <img src="./img/title_sales_kr.png" alt="SALES 개최 기념 판매 정보" />
         </h2>
@@ -216,7 +217,7 @@
       </section>
       <!-- //sales -->
 
-      <section class="gallery inner">
+      <section id="gallery" class="gallery inner content">
         <h2>
           <img src="./img-gallery/title_gallery_kr.png" alt="신작 포토 갤러리" />
         </h2>
