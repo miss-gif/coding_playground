@@ -8,6 +8,7 @@ body {
   font-weight: 400;
   background-color: #000;
   color: #fff;
+  scroll-behavior: smooth;
 }
 
 p {
@@ -105,6 +106,10 @@ header {
 // MAIN
 main {
   padding-top: 90px;
+
+  section {
+    // height: 80vh;
+  }
 
   .about {
     padding-top: 80px;
