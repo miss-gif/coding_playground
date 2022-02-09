@@ -1,5 +1,7 @@
 body {
   font-size: 16px;
+  font-family: "Noto Serif KR", serif;
+  font-weight: 400;
   background-color: #000;
   color: #fff;
 }
@@ -70,6 +72,12 @@ header {
 
 header h1 {
   width: 92px;
+}
+
+header nav {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
 }
 
 header nav ul {
