@@ -1,3 +1,4 @@
+//검색창 이벤트
 const searchEl = document.querySelector(".search");
 const searchInputEl = searchEl.querySelector("input");
 
@@ -15,6 +16,7 @@ searchInputEl.addEventListener("blur", function () {
   searchInputEl.setAttribute("placeholder", "");
 });
 
+//배지 이벤트
 const badgeEl = document.querySelector("header .badges");
 
 window.addEventListener(
@@ -22,14 +24,12 @@ window.addEventListener(
   _.throttle(function () {
     console.log(window.scrollY);
     if (window.scrollY > 500) {
-      // badgeEl.style.display = "none";
       // gsap.to(요소, 지속시간, 옵션);
       gsap.to(badgeEl, 0.6, {
         opacity: 0,
         display: "none",
       });
     } else {
-      // badgeEl.style.display = "block";
       gsap.to(badgeEl, 0.6, {
         opacity: 1,
         display: "block",
@@ -47,14 +47,14 @@ fadeEls.forEach(function (fadeEl, index) {
   });
 });
 
-/**
- * 슬라이드 요소 관리
- */
+// 슬라이드 _ 공지사항
 new Swiper(".notice-line .swiper-container", {
   direction: "vertical", // 수직 슬라이드
   autoplay: true, // 자동 재생 여부
   loop: true, // 반복 재생 여부
 });
+
+// 슬라이드 _ 이벤트
 new Swiper(".promotion .swiper-container", {
   // direction: 'horizontal', // 수평 슬라이드
   autoplay: {
@@ -88,4 +88,19 @@ new Swiper(".awards .swiper-container", {
     prevEl: ".awards .swiper-prev", // 이전 버튼 선택자
     nextEl: ".awards .swiper-next", // 다음 버튼 선택자
   },
+});
+
+// 프로모션
+const promotionEl = document.querySelector(".promotion");
+const promotionToggleBtn = document.querySelector(".toggle-promotion");
+let isHidePromotion = false;
+promotionToggleBtn.addEventListener("click", function () {
+  isHidePromotion = !isHidePromotion;
+  if (isHidePromotion) {
+    // 숨김 처리!
+    promotionEl.classList.add("hide");
+  } else {
+    // 보임 처리!
+    promotionEl.classList.remove("hide");
+  }
 });
