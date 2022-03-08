@@ -1,31 +1,3 @@
-Skip to content
-Search or jump to…
-Pulls
-Issues
-Marketplace
-Explore
- 
-@miss-gif 
-ParkYoungWoong
-/
-starbucks-vanilla-app
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-starbucks-vanilla-app/css/main.css
-@ParkYoungWoong
-ParkYoungWoong Fix z-index of pagination, so that appear below the header #1
-Latest commit 192383e on 26 Mar 2021
- History
- 1 contributor
-894 lines (865 sloc)  15.9 KB
-   
 /*COMMON*/
 body {
   font-family: 'Nanum Gothic', sans-serif;
@@ -34,9 +6,11 @@ body {
   line-height: 1.4;
   color: #333;
 }
+
 a {
   text-decoration: none;
 }
+
 img {
   /* img(인라인 요소) 하단에 Baseline 공백을 제거 */
   display: block;
@@ -64,38 +38,47 @@ img {
   display: block;
   transition: .4s;
 }
+
 .btn:hover {
   background-color: #333;
   color: #FFF;
 }
+
 .btn.btn--reverse {
   background-color: #333;
   color: #FFF;
 }
+
 .btn.btn--reverse:hover {
   background-color: transparent;
   color: #333;
 }
+
 .btn.btn--brown {
   color: #592B18;
   border-color: #592B18;
 }
+
 .btn.btn--brown:hover {
   color: #FFF;
   background-color: #592B18;
 }
+
 .btn.btn--gold {
   color: #D9AA8A;
   border-color: #D9AA8A;
 }
+
 .btn.btn--gold:hover {
   color: #FFF;
   background-color: #D9AA8A;
 }
+
 .btn.btn--white {
   color: #FFF;
   border-color: #FFF;
 }
+
 .btn.btn--white:hover {
   color: #333;
   background-color: #FFF;
@@ -106,25 +89,32 @@ img {
   opacity: 0;
   transition: 1s;
 }
+
 .back-to-position.to-right {
   transform: translateX(-150px);
 }
+
 .back-to-position.to-left {
   transform: translateX(150px);
 }
+
 .show .back-to-position {
   opacity: 1;
   transform: translateX(0);
 }
+
 .show .back-to-position.delay-0 {
   transition-delay: 0s;
 }
+
 .show .back-to-position.delay-1 {
   transition-delay: .3s;
 }
+
 .show .back-to-position.delay-2 {
   transition-delay: .6s;
 }
+
 .show .back-to-position.delay-3 {
   transition-delay: .9s;
 }
@@ -139,9 +129,11 @@ header {
   background-color: #F6F5F0;
   border-bottom: 1px solid #c8c8c8;
 }
-header > .inner {
+
+header>.inner {
   height: 120px;
 }
+
 header .logo {
   height: 75px;
   position: absolute;
@@ -150,19 +142,23 @@ header .logo {
   left: 0;
   margin: auto;
 }
+
 header .sub-menu {
   position: absolute;
   top: 10px;
   right: 0;
   display: flex;
 }
+
 header .sub-menu ul.menu {
   font-family: Arial, sans-serif;
   display: flex;
 }
+
 header .sub-menu ul.menu li {
   position: relative;
 }
+
 header .sub-menu ul.menu li::before {
   content: "";
   width: 1px;
@@ -173,22 +169,27 @@ header .sub-menu ul.menu li::before {
   bottom: 0;
   margin: auto;
 }
+
 header .sub-menu ul.menu li:first-child::before {
   display: none;
 }
+
 header .sub-menu ul.menu li a {
   padding: 11px 16px;
   display: block;
   font-size: 13px;
   color: #656565;
 }
+
 header .sub-menu ul.menu li a:hover {
   color: #000;
 }
+
 header .sub-menu .search {
   position: relative;
   height: 34px;
 }
+
 header .sub-menu .search input {
   width: 36px;
   height: inherit;
@@ -202,10 +203,12 @@ header .sub-menu .search input {
   font-size: 12px;
   transition: width .4s;
 }
+
 header .sub-menu .search input:focus {
   width: 190px;
   border-color: #669900;
 }
+
 header .sub-menu .search .material-icons {
   height: 24px;
   position: absolute;
@@ -215,9 +218,11 @@ header .sub-menu .search .material-icons {
   margin: auto;
   transition: .4s;
 }
+
 header .sub-menu .search.focused .material-icons {
   opacity: 0;
 }
+
 header .main-menu {
   position: absolute;
   bottom: 0;
@@ -225,73 +230,88 @@ header .main-menu {
   z-index: 1;
   display: flex;
 }
+
 header .main-menu .item .item__name {
   padding: 10px 20px 34px 20px;
   font-family: Arial, sans-serif;
   font-size: 13px;
 }
+
 header .main-menu .item:hover .item__name {
   background-color: #2C2A29;
   color: #669900;
   border-radius: 6px 6px 0 0;
 }
+
 header .main-menu .item .item__contents {
   width: 100%;
   position: fixed;
   left: 0;
   display: none;
 }
+
 header .main-menu .item:hover .item__contents {
   display: block;
 }
+
 header .main-menu .item .item__contents .contents__menu {
   background-color: #2C2A29;
 }
-header .main-menu .item .item__contents .contents__menu > ul {
+
+header .main-menu .item .item__contents .contents__menu>ul {
   padding: 20px 0;
   display: flex;
 }
-header .main-menu .item .item__contents .contents__menu > ul > li {
+
+header .main-menu .item .item__contents .contents__menu>ul>li {
   width: 220px;
 }
-header .main-menu .item .item__contents .contents__menu > ul > li h4 {
+
+header .main-menu .item .item__contents .contents__menu>ul>li h4 {
   padding: 3px 0 12px 0;
   font-size: 14px;
   color: #fff;
 }
-header .main-menu .item .item__contents .contents__menu > ul > li ul li {
+
+header .main-menu .item .item__contents .contents__menu>ul>li ul li {
   padding: 5px 0;
   font-size: 12px;
   color: #999;
   cursor: pointer;
 }
-header .main-menu .item .item__contents .contents__menu > ul > li ul li:hover {
+
+header .main-menu .item .item__contents .contents__menu>ul>li ul li:hover {
   color: #669900;
 }
+
 header .main-menu .item .item__contents .contents__texture {
   padding: 26px 0;
   font-size: 12px;
   background-image: url("../images/main_menu_pattern.jpg");
 }
+
 header .main-menu .item .item__contents .contents__texture h4 {
   color: #999;
   font-weight: 900;
 }
+
 header .main-menu .item .item__contents .contents__texture p {
   color: #64a70b;
   margin: 4px 0 14px;
 }
+
 /*BADGES*/
 header .badges {
   position: absolute;
   top: 132px;
   right: 12px;
 }
+
 header .badges .badge {
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 12px;
-  box-shadow: 4px 4px 10px rgba(0,0,0,.15);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, .15);
   cursor: pointer;
 }
 
@@ -302,44 +322,53 @@ header .badges .badge {
   background-image: url("../images/visual_bg.jpg");
   background-position: center;
 }
+
 .visual .inner {
   height: 646px;
 }
+
 .visual .title {
   position: absolute;
   top: 88px;
   left: -10px;
 }
+
 .visual .title .btn {
   position: absolute;
   top: 259px;
   left: 173px;
 }
+
 .visual .cup1.image {
   position: absolute;
   bottom: 0;
   right: -47px;
 }
+
 .visual .cup1.text {
   position: absolute;
   top: 38px;
   right: 171px;
 }
+
 .visual .cup2.image {
   position: absolute;
   bottom: 0;
   right: 162px;
 }
+
 .visual .cup2.text {
   position: absolute;
   top: 321px;
   right: 416px;
 }
+
 .visual .spoon {
   position: absolute;
   bottom: 0;
   left: 275px;
 }
+
 .visual .fade-in {
   opacity: 0;
 }
@@ -350,6 +379,7 @@ header .badges .badge {
 .notice .notice-line {
   position: relative;
 }
+
 .notice .notice-line .bg-left {
   width: 50%;
   height: 100%;
@@ -358,6 +388,7 @@ header .badges .badge {
   top: 0;
   left: 0;
 }
+
 .notice .notice-line .bg-right {
   width: 50%;
   height: 100%;
@@ -366,11 +397,13 @@ header .badges .badge {
   top: 0;
   right: 0;
 }
+
 .notice .notice-line .inner {
   height: 62px;
   z-index: 1;
   display: flex;
 }
+
 .notice .notice-line .inner__left {
   width: 60%;
   height: 100%;
@@ -378,24 +411,29 @@ header .badges .badge {
   display: flex;
   align-items: center;
 }
+
 .notice .notice-line .inner__left h2 {
   color: #fff;
   font-size: 17px;
   font-weight: 700;
   margin-right: 20px;
 }
+
 .notice .notice-line .inner__left .swiper-container {
   height: 62px;
   flex-grow: 1;
 }
+
 .notice .notice-line .inner__left .swiper-slide {
   height: 62px;
   display: flex;
   align-items: center;
 }
+
 .notice .notice-line .inner__left .swiper-slide a {
   color: #fff;
 }
+
 .notice .notice-line .inner__left .notice-line__more {
   width: 62px;
   height: 62px;
@@ -403,10 +441,12 @@ header .badges .badge {
   justify-content: center;
   align-items: center;
 }
+
 .notice .notice-line .inner__left .notice-line__more .material-icons {
   color: #fff;
   font-size: 30px;
 }
+
 .notice .notice-line .inner__right {
   width: 40%;
   height: 100%;
@@ -414,10 +454,12 @@ header .badges .badge {
   justify-content: flex-end;
   align-items: center;
 }
+
 .notice .notice-line .inner__right h2 {
   font-size: 17px;
   font-weight: 700;
 }
+
 .notice .notice-line .inner__right .toggle-promotion {
   width: 62px;
   height: 62px;
@@ -426,9 +468,11 @@ header .badges .badge {
   justify-content: center;
   align-items: center;
 }
+
 .notice .notice-line .inner__right .toggle-promotion .material-icons {
   font-size: 30px;
 }
+
 /*PROMOTION*/
 .notice .promotion {
   /*width: auto;*/
@@ -438,9 +482,11 @@ header .badges .badge {
   overflow: hidden;
   transition: height .4s;
 }
+
 .notice .promotion.hide {
   height: 0;
 }
+
 .notice .promotion .swiper-container {
   /* 819px 슬라이드 3개와 그 사이 여백 10px씩 = 2477px */
   width: calc(819px * 3 + 20px);
@@ -450,14 +496,17 @@ header .badges .badge {
   left: 50%;
   margin-left: calc((819px * 3 + 20px) / -2);
 }
+
 .notice .promotion .swiper-slide {
   position: relative;
   opacity: .5;
   transition: opacity 1s;
 }
+
 .notice .promotion .swiper-slide-active {
   opacity: 1;
 }
+
 .notice .promotion .swiper-slide .btn {
   /*width: 130px;*/
   position: absolute;
@@ -466,12 +515,14 @@ header .badges .badge {
   right: 0;
   margin: auto;
 }
+
 .notice .promotion .swiper-pagination {
   bottom: 40px;
   left: 0;
   right: 0;
   z-index: 0;
 }
+
 .notice .promotion .swiper-pagination .swiper-pagination-bullet {
   background-color: transparent;
   background-image: url("../images/promotion_slide_pager.png");
@@ -480,12 +531,15 @@ header .badges .badge {
   margin-right: 6px;
   outline: none;
 }
+
 .notice .promotion .swiper-pagination .swiper-pagination-bullet:last-child {
   margin-right: 0;
 }
+
 .notice .promotion .swiper-pagination .swiper-pagination-bullet-active {
   background-image: url("../images/promotion_slide_pager_on.png");
 }
+
 .notice .promotion .swiper-prev,
 .notice .promotion .swiper-next {
   width: 42px;
@@ -504,14 +558,17 @@ header .badges .badge {
   align-items: center;
   transition: .4s;
 }
+
 .notice .promotion .swiper-prev {
   left: 50%;
   margin-left: -480px;
 }
+
 .notice .promotion .swiper-next {
   right: 50%;
   margin-right: -480px;
 }
+
 .notice .promotion .swiper-prev:hover,
 .notice .promotion .swiper-next:hover {
   background-color: #333;
@@ -523,6 +580,7 @@ header .badges .badge {
 .rewards {
   position: relative;
 }
+
 .rewards .bg-left {
   width: 50%;
   height: 100%;
@@ -531,6 +589,7 @@ header .badges .badge {
   top: 0;
   left: 0;
 }
+
 .rewards .bg-right {
   width: 50%;
   height: 100%;
@@ -539,10 +598,12 @@ header .badges .badge {
   top: 0;
   right: 0;
 }
+
 .rewards .inner {
   background-image: url("../images/rewards.jpg");
   height: 241px;
 }
+
 .rewards .btn-group {
   position: absolute;
   right: 0;
@@ -551,13 +612,16 @@ header .badges .badge {
   display: flex;
   flex-wrap: wrap;
 }
+
 .rewards .btn-group .btn.sign-up {
   /*width: 130px;*/
   margin-right: 10px;
 }
+
 .rewards .btn-group .btn.sign-in {
   width: 110px;
 }
+
 .rewards .btn-group .btn.gift {
   margin-top: 10px;
   flex: 1;
@@ -571,6 +635,7 @@ header .badges .badge {
   background-color: #333;
   overflow: hidden;
 }
+
 .youtube .youtube__area {
   width: 1920px;
   position: absolute;
@@ -581,6 +646,7 @@ header .badges .badge {
   top: 50%;
   margin-top: calc(1920px * 9 / 16 / -2);
 }
+
 .youtube .youtube__area::before {
   content: "";
   display: block;
@@ -589,15 +655,17 @@ header .badges .badge {
   height: 0;
   padding-top: 56.25%;
 }
+
 .youtube .youtube__cover {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,.3);
+  background-color: rgba(0, 0, 0, .3);
   background-image: url("../images/video_cover_pattern.png");
 }
+
 #player {
   width: 100%;
   height: 100%;
@@ -605,14 +673,17 @@ header .badges .badge {
   top: 0;
   left: 0;
 }
+
 .youtube .inner {
   height: inherit;
 }
+
 .youtube .floating1 {
   position: absolute;
   top: 50px;
   left: 0;
 }
+
 .youtube .floating2 {
   position: absolute;
   top: 350px;
@@ -624,22 +695,27 @@ header .badges .badge {
 .season-product {
   background-image: url("../images/season_product_bg.jpg");
 }
+
 .season-product .inner {
   height: 400px;
 }
+
 .season-product .floating3 {
   position: absolute;
   top: -200px;
   right: 0;
 }
+
 .season-product .text-group {
   position: absolute;
   top: 110px;
   right: 100px;
 }
+
 .season-product .text-group .title {
   margin-bottom: 10px;
 }
+
 .season-product .text-group .description {
   margin-bottom: 15px;
 }
@@ -649,19 +725,23 @@ header .badges .badge {
 .reserve-coffee {
   background-image: url("../images/reserve_bg.jpg");
 }
+
 .reserve-coffee .inner {
   height: 400px;
 }
+
 .reserve-coffee .reserve-logo {
   position: absolute;
   top: 110px;
   left: 0;
 }
+
 .reserve-coffee .text-group {
   position: absolute;
   top: 124px;
   left: 208px;
 }
+
 .reserve-coffee .product {
   position: absolute;
   top: 0;
@@ -677,9 +757,11 @@ header .badges .badge {
   background-attachment: fixed;
   background-size: cover;
 }
+
 .pick-your-favorite .inner {
   padding: 110px 0;
 }
+
 .pick-your-favorite .text-group {
   width: 362px;
   margin-left: 100px;
@@ -687,9 +769,11 @@ header .badges .badge {
   justify-content: flex-end;
   flex-wrap: wrap;
 }
+
 .pick-your-favorite .text-group .title {
   margin-bottom: 40px;
 }
+
 .pick-your-favorite .text-group .description {
   margin-bottom: 40px;
 }
@@ -703,17 +787,20 @@ header .badges .badge {
   background-attachment: fixed;
   background-size: cover;
 }
+
 .reserve-store .inner {
   height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .reserve-store .medal {
   width: 334px;
   height: 334px;
   perspective: 600px;
 }
+
 .reserve-store .medal .front,
 .reserve-store .medal .back {
   width: inherit;
@@ -722,18 +809,23 @@ header .badges .badge {
   transition: 1s;
   backface-visibility: hidden;
 }
+
 .reserve-store .medal .front {
   transform: rotateY(0deg);
 }
+
 .reserve-store .medal:hover .front {
   transform: rotateY(180deg);
 }
+
 .reserve-store .medal .back {
   transform: rotateY(-180deg);
 }
+
 .reserve-store .medal:hover .back {
   transform: rotateY(0deg);
 }
+
 .reserve-store .medal .back .btn {
   position: absolute;
   top: 240px;
@@ -747,40 +839,49 @@ header .badges .badge {
 .find-store {
   background-image: url("../images/find_store_bg.jpg");
 }
+
 .find-store .inner {
   height: 400px;
 }
+
 .find-store .texture1 {
   position: absolute;
   top: 0;
   left: 400px;
 }
+
 .find-store .texture2 {
   position: absolute;
   bottom: 0;
   right: 0;
 }
+
 .find-store .picture {
   border-radius: 50%;
-  box-shadow: 2px 2px 8px 0 rgba(0,0,0,.5);
+  box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, .5);
   position: absolute;
 }
+
 .find-store .picture1 {
   top: -60px;
   left: 0;
 }
+
 .find-store .picture2 {
   top: 150px;
   left: 250px;
 }
+
 .find-store .text-group {
   position: absolute;
   top: 120px;
   left: 550px;
 }
+
 .find-store .text-group .title {
   margin-bottom: 20px;
 }
+
 .find-store .text-group .description {
   margin-bottom: 20px;
 }
@@ -790,13 +891,16 @@ header .badges .badge {
 .awards {
   background-color: #272727;
 }
+
 .awards .inner {
   padding: 40px 0;
 }
+
 .awards .swiper-container {
   width: 100%;
   height: 40px;
 }
+
 .awards .swiper-prev,
 .awards .swiper-next {
   width: 42px;
@@ -816,12 +920,15 @@ header .badges .badge {
   align-items: center;
   transition: .4s;
 }
+
 .awards .swiper-prev {
   left: -100px;
 }
+
 .awards .swiper-next {
   right: -100px;
 }
+
 .awards .swiper-prev:hover,
 .awards .swiper-next:hover {
   background-color: #fff;
@@ -834,16 +941,20 @@ footer {
   background-color: #272727;
   border-top: 1px solid #333;
 }
+
 footer .inner {
   padding: 40px 0 60px 0;
 }
+
 footer .menu {
   display: flex;
   justify-content: center;
 }
+
 footer .menu li {
   position: relative;
 }
+
 footer .menu li::before {
   content: "";
   width: 3px;
@@ -855,9 +966,11 @@ footer .menu li::before {
   right: -1px;
   margin: auto;
 }
+
 footer .menu li:last-child::before {
   display: none;
 }
+
 footer .menu li a {
   display: block;
   color: #CCC;
@@ -865,39 +978,48 @@ footer .menu li a {
   font-weight: 700;
   padding: 15px;
 }
+
 footer .menu li a.green {
   color: #669900;
 }
+
 footer .btn-group {
   margin-top: 20px;
   display: flex;
   justify-content: center;
 }
+
 footer .btn-group .btn {
   font-size: 12px;
   margin-right: 10px;
 }
+
 footer .btn-group .btn:last-child {
   margin-right: 0;
 }
+
 footer .info {
   margin-top: 30px;
   text-align: center;
 }
+
 footer .info span {
   margin-right: 20px;
   color: #999;
   font-size: 12px;
 }
+
 footer .info span:last-child {
   margin-right: 0;
 }
+
 footer .copyright {
   color: #999;
   font-size: 12px;
   text-align: center;
   margin-top: 12px;
 }
+
 footer .logo {
   margin: 30px auto 0;
 }
@@ -920,16 +1042,6 @@ footer .logo {
   justify-content: center;
   align-items: center;
 }
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
+
+© 2022 GitHub,
+Inc. Terms Privacy Security Status Docs Contact GitHub Pricing API Training Blog About Loading complete
