@@ -34,6 +34,7 @@ function paintToDo(newTodo) {
   button.addEventListener("click", deleteToDo);
   li.appendChild(span);
   li.appendChild(button);
+  1;
   todoList.appendChild(li);
 }
 
@@ -41,8 +42,10 @@ function deleteToDo(event) {
   // console.dir(event.target.parentElement);
   // console.dir(event.target.parentElement.innerText);
   const li = event.target.parentElement;
-  console.log(li.id);
   li.remove();
+  toDos = toDos.filter((toDo) => toDo.id !== parseInt(li.id));
+  // console.log(li.id);
+  saveToDos();
 }
 
 const savedToDos = localStorage.getItem(TODOS_KEY);
