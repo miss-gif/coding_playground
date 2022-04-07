@@ -1,7 +1,7 @@
 // 마지막 코드
-const loginForm = document.querySelector("#login-form");
-const loginInput = document.querySelector("#login-form input");
-const good = document.querySelector("#good");
+const loginForm = document.querySelector("#login-form"); // 이름 입력창 영역
+const loginInput = document.querySelector("#login-form input"); // 이름 입력창
+const good = document.querySelector("#good"); // 입력 받은 갑 술력
 
 // 반복되는 문자열은 대문자 변수로 저장
 const HIDDEN_CLASSNAME = "hidden";
