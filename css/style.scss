@@ -10,15 +10,30 @@ li {
   list-style-type: none;
 }
 
-input,
-button {
-  padding: 5px 10px;
-}
-
-ul {
+.container {
   display: flex;
-  margin: 10px;
-  li {
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    margin: 20px;
+  }
+
+  input,
+  button {
+    padding: 5px 10px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 10px;
+    li {
+      flex-basis: 48%;
+      margin: 10px;
+      img {
+        width: 40%;
+      }
+    }
   }
 }
