@@ -1,0 +1,4 @@
+# 업로드하고 싶지 않은 파일 이름을 기록하는 곳
+
+.DS_Store
+/screenshots
