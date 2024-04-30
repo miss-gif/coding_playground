@@ -1,0 +1,17 @@
+.wrapper {
+  ul {
+    display: flex;
+
+    li {
+      background-color: rgba(17, 85, 102, 0.5);
+      padding: 10px;
+      margin: 10px;
+      border-radius: 20px;
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}
