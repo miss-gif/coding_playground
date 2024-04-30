@@ -1,0 +1,24 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  padding: 20px;
+}
+
+.footer li {
+  padding: 50px;
+}
+
+.sns {
+  padding: 10px;
+}
+
+footer .span {
+  margin: 10px;
+  padding: 10px;
+}
