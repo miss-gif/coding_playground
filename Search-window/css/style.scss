@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #e5e5e5e5;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  h1 {
+    margin: 20px;
+  }
+
+  input,
+  button {
+    padding: 5px 10px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    li {
+      flex-basis: 48%;
+      margin: 10px;
+      img {
+        width: 40%;
+      }
+    }
+  }
+}
