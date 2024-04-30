@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.fc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: #181818;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* header Start */
+/* header Start */
+/* header Start */
+
+.header01 {
+  width: 100%;
+  height: 56px;
+  background-color: #202020;
+}
+
+.search {}
+
+.search input {
+  width: 570px;
+  height: 40px;
+}
+
+.searchIcon {
+  width: 60px;
+  height: 40px;
+  background-color: #313131;
+}
+
+.serviceArea {}
+
+.serviceArea ul {
+  display: flex;
+  position: absolute;
+  right: 0;
+  margin-right: 30px;
+}
+
+.serviceArea li {
+  padding: 0 5px;
+  margin: 0 5px;
+}
+
+.header02 {
+  width: 100%;
+  height: 56px;
+  background-color: #202020;
+  border: 1px solid #373737;
+}
+
+.header02 ul {
+  display: flex;
+}
+
+.header02 li {
+  padding: 6px 10px;
+  margin: 0 5px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+
+/* MAIN START */
+/* MAIN START */
+/* MAIN START */
+
+main {
+  display: flex;
+  /* background-color: #156; */
+}
+
+
+nav {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  background-color: #212121;
+  position: fixed;
+  top: 0;
+  line-height: 1.5;
+}
+
+.logo {
+  width: 240px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+  padding: 0 20px;
+}
+
+nav ul {}
+
+nav li {
+  width: 240px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav ul:nth-child(2) li:first-child {
+  background-color: #383838;
+  margin-top: 5px;
+}
+
+nav .material-icons {
+  margin-right: 20px;
+}
+
+nav li:hover {
+  background-color: #383838;
+}
+
+/* mainContents */
+/* mainContents */
+/* mainContents */
+
+.mainContents {
+  width: 100%;
+  margin: 30px 50px 30px 290px;
+}
+
+.mainBanner {
+  height: 600px;
+  background-image: url(https://cdn.pixabay.com/photo/2021/11/29/17/32/city-6833167_960_720.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  position: relative;
+}
+
+.mainBannerInfo {
+  bottom: 0;
+  position: absolute;
+  padding: 20px;
+}
+
+/* CARD START */
+/* CARD START */
+/* CARD START */
+
+.card {
+  margin: 50px 0;
+  background-color: #156;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card .title {
+  font-size: 24px;
+}
+
+.wishMovie {
+  background-color: #789;
+}
+
+.wishMovieContent {
+  width: 300px;
+  height: 300px;
+  margin: 0 20px;
+  background-color: #222;
+  position: relative;
+}
+
+.wishMovieContentInfo {
+  bottom: 0;
+  position: absolute;
+  padding: 20px;
+}
+
+/* CARD START */
+/* CARD START */
+/* CARD START */
+
+.postLayout {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post {
+  width: 60%;
+  height: 200px;
+  background-color: #123;
+}
+
+.posts {
+  width: 38%;
+  height: 200px;
+  background-color: #123;
+}
+
+/* footer */
+/* footer */
+/* footer */
+
+footer {
+  flex-direction: column;
+  margin-left: 240px;
+}
+
+.footerMenu ul {
+  display: flex;
+}
+
+.footerMenu li {
+  margin: 15px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.footerMenu li::before {
+  content: '';
+  width: 1px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.25);
+  margin-left: -15px;
+  position: absolute;
+}
+
+.footerMenu li:first-child::before {
+  display: none;
+}
+
+
+
+.copyright {
+  margin-bottom: 15px;
+}
