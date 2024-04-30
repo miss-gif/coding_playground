@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="center">
+      <form id="login-form" class="hidden">
+        <input required maxlength="15" type="text" placeholder="너의 이름은?" />
+        <!-- <button>로그인</button> -->
+        <input type="submit" value="Log In" />
+      </form>
+      <h1 id="good" class="hidden"></h1>
+      <h2 id="clock">00:00:00</h2>
+      <form action="" id="todo-form">
+        <input type="text" placeholder="투투 리스트" required />
+      </form>
+      <ul id="todo-list"></ul>
+      <div id="quote" class="">
+        <span></span>
+        <span></span>
+      </div>
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <!-- 이름 입력창 -->
+    <script src="./js/greetings.js"></script>
+    <!-- 시간 표시 -->
+    <script src="./js/clock.js"></script>
+    <!-- 명언 출력 -->
+    <script src="./js/quotes.js"></script>
+    <!-- 배경화면 -->
+    <script src="./js/background.js"></script>
+    <!-- 투 두 리스트 생성 -->
+    <script src="./js/todo.js"></script>
+    <!-- 날씨 API연동 -->
+    <script src="./js/weather.js"></script>
+  </body>
+</html>
